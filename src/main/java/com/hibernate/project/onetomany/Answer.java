@@ -1,12 +1,15 @@
-package com.hibernate.project.mapping;
+package com.hibernate.project.onetomany;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 
-@Entity
+import org.hibernate.annotations.ManyToAny;
+
+@Entity(name = "AnsOneToMany")
 public class Answer {
 	
 	@Id
@@ -14,8 +17,7 @@ public class Answer {
 	private int answerId;
 	private  String answer;
 	
-	@OneToOne(mappedBy = "answer")
-	@JoinColumn(name = "ques_id")
+	@ManyToOne
 	private Question question;
 	
 	

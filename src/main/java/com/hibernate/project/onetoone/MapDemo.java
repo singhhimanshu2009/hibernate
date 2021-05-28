@@ -1,4 +1,4 @@
-package com.hibernate.project.mapping;
+package com.hibernate.project.onetoone;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -21,7 +21,7 @@ public class MapDemo {
 		Answer answer1 = new Answer();
 		answer1.setAnswerId(2560);
 		answer1.setAnswer("Java is object oriented programming language");
-		answer1.setQuestion(question1);
+		answer1.setQuestion(question1);  // for bi-directional
 		question1.setAnswer(answer1);
 		
 		
@@ -35,7 +35,7 @@ public class MapDemo {
 		Answer answer2 = new Answer();
 		answer2.setAnswerId(6985);
 		answer2.setAnswer("Collection is an API which works with group of objects");
-		answer2.setQuestion(question2);		
+		answer2.setQuestion(question2);  // for bi-directional		
 		question2.setAnswer(answer2);
 		
 		//Session

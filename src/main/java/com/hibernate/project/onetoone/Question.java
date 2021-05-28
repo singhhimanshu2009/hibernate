@@ -1,4 +1,4 @@
-package com.hibernate.project.mapping;
+package com.hibernate.project.onetoone;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

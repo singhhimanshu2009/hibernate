@@ -17,7 +17,7 @@ public class MapDemo {
 		cfg.configure("hibernate.cfg.xml");  //configuration file path
 		SessionFactory factory = cfg.buildSessionFactory();
 		
-/*		//Creating question 1
+		//Creating question 1
 		Question question1 = new Question();
 		question1.setQuestionId(1001);
 		question1.setQuestion("What is java?");
@@ -45,7 +45,7 @@ public class MapDemo {
 		list.add(answer2);
 		list.add(answer3);
 		
-		question1.setAnswers(list); */
+		question1.setAnswers(list);
 		
 		
 		
@@ -56,11 +56,11 @@ public class MapDemo {
 		Transaction tx = s.beginTransaction();
 		
 		//save
-//		s.save(question1);
-//		
-//		s.save(answer1);
-//		s.save(answer2);
-//		s.save(answer3);
+		s.save(question1);
+		
+		s.save(answer1);
+		s.save(answer2);
+		s.save(answer3);
 		
 		tx.commit();
 		

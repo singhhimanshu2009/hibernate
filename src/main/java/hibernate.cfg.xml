@@ -5,13 +5,18 @@
 
 <hibernate-configuration>
 	<session-factory>	
+		<!-- Properties -->
 		<property name="connection.diver_class">com.mysql.jdbc.Driver</property>
 		<property name="connection.url">jdbc:mysql://localhost:3306/myhiber</property>
 		<property name="connection.username">root</property>
 		<property name="connection.password">root</property>
 		<property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
-		<property name="hbm2ddl.auto">create</property>
-		<property name="show_sql">true</property>	
+		<property name="hbm2ddl.auto">update</property>
+		<property name="show_sql">true</property>
+		<!-- Format sql queries on console -->
+		<property name="format_sql">true</property>	
+			
+		<!-- Mapping -->
 		<mapping class="com.hibernate.project.Student"/>	
 		<mapping class="com.hibernate.project.Address"/>		
 		<!-- OneToOne -->
@@ -22,6 +27,6 @@
 		<mapping class="com.hibernate.project.onetomany.Answer"/>	
 		<!-- ManyToMany -->	
 		<mapping class="com.hibernate.project.manytomany.Employee"/>	
-		<mapping class="com.hibernate.project.manytomany.Project"/>	
+		<mapping class="com.hibernate.project.manytomany.Project"/>
 	</session-factory>
 </hibernate-configuration>

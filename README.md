@@ -7,3 +7,4 @@
 6. OneToMany relationship
 7. ManyToMany relationship
 8. Fetch Type : Eager & Lazy
+9. Hibernate/Persistance lifecycle states : Transient, Persistance, Detached & Removed states.

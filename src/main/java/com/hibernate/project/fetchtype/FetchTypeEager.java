@@ -17,9 +17,12 @@ public class FetchTypeEager {
 		
 		Question q = (Question)s.get(Question.class, 1001);
 		
-		//Add FetchType.Eager in Question entity for eager loading
+		//Add FetchType.Eager in Question entity for eager loading (OneToMany)
 		System.out.println(q.getQuestionId());
 		System.out.println(q.getQuestion());
+		
+		//Query will not run again
+		System.out.println(q.getAnswers().size());
 		
 		
 		factory.close();

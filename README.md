@@ -6,3 +6,4 @@
 5. OneToOne relationship
 6. OneToMany relationship
 7. ManyToMany relationship
+8. Fetch Type : Eager & Lazy

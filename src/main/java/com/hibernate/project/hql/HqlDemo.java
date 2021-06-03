@@ -1,4 +1,4 @@
-package com.hibernate.hql;
+package com.hibernate.project.hql;
 
 import java.util.List;
 
@@ -25,7 +25,7 @@ public class HqlDemo {
 		Query q = session.createQuery(query2);
 		q.setParameter("n", "Chandler");
 		q.setParameter("x", "Meerut");
-		
+		 
 		//for multiple result
 		List<Student> list = q.list();
 		

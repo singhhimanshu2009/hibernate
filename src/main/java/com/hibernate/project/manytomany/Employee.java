@@ -8,8 +8,6 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 
-import com.sun.beans.introspect.PropertyInfo.Name;
-
 @Entity
 public class Employee {
 	
